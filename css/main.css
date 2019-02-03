@@ -6,6 +6,7 @@ header, main, footer {
 	display: none;
 }
 
+/* ------------------------------------------------------------------------------------------------------------------------------ */
 /* --- Scrollbar styles --- */
 
 /* width */
@@ -28,7 +29,16 @@ header, main, footer {
   background: #ababab;
 }
 
-/* ------ */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* --- Main navbar --- */
+
+#main-navbar{
+	height: 100px;
+	transition: .3s;
+	background-color: transparent;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
 
 .parallax::after{
 	content: '';
@@ -237,6 +247,47 @@ header, main, footer {
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 /* --- Ciexpro helpers --- */
+
+.ciexpro-nav-link {
+	padding: 0 !important;
+	margin-left: 25px;
+}
+
+.ciexpro-nav-link  > a{
+	font-size: 18px !important;
+	padding: 0 !important;
+}
+
+.ciexpro-nav-link:hover > a{
+	font-weight: 700;
+}
+
+.ciexpro-nav-link .divider {
+	height: 2px;
+	width: 0;
+	transition: .3s;
+}
+
+.ciexpro-nav-link:hover > .divider {
+	width: 100%;
+	background-color: #762097;
+}
+
+.ciexpro-text-blue {
+	color: #0081C6 !important;
+}
+
+.ciexpro-text-lime {
+	color: #A8D42E !important;
+}
+
+.ciexpro-text-purple {
+	color: #762097 !important;
+}
+
+.ciexpro-text-gray {
+	color: #5B5B5F !important;
+}
 
 .ciexpro-bg-blue {
 	background-color: #0081C6 !important;
