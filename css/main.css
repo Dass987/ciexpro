@@ -312,6 +312,10 @@ header, main, footer {
 	background-color: #5B5B5F !important;
 }
 
+.ciexpro-footer-divider {
+	background-color: #c6ccccd8 !important;
+}
+
 .ciexpro-brand-logo {
 	margin-top: -25px;
 	margin-left: -25px;
@@ -348,6 +352,10 @@ header, main, footer {
 
 .ciexpro-footer-item > a:hover {
 	color: #762097 !important;
+}
+
+.ciexpro-footer-address {
+	color: #c6ccccd8 !important;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
