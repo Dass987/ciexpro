@@ -186,7 +186,7 @@ header, main, footer {
 .social-network {
 	border: 1px solid #9e9e9e;
 	color: #9e9e9e !important;
-	margin-left: 5px;
+	margin-right: 5px;
 	cursor: pointer;
 	transition: .4s;
 }
@@ -265,12 +265,12 @@ header, main, footer {
 .ciexpro-nav-link .divider {
 	height: 2px;
 	width: 0;
+	background-color: #762097;
 	transition: .3s;
 }
 
 .ciexpro-nav-link:hover > .divider {
 	width: 100%;
-	background-color: #762097;
 }
 
 .ciexpro-text-blue {
@@ -329,12 +329,16 @@ header, main, footer {
 }
 
 .ciexpro-footer-title {
-	letter-spacing: 1px; 
+	letter-spacing: 1px;
 }
 
 .ciexpro-footer-item-color > a {
 	color: #c6ccccd8 !important;
 	letter-spacing: 1px;
+}
+
+.ciexpro-footer-item {
+	margin-top: 1.2rem;
 }
 
 .ciexpro-footer-item > a {
@@ -2460,8 +2464,10 @@ header, main, footer {
 }
 
 .hoverable:hover {
-  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2), 0 13px 33px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2), 0 13px 33px 0 rgba(0, 0, 0, 0.19);
+  /*-webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2), 0 13px 33px 0 rgba(0, 0, 0, 0.19);
+					box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2), 0 13px 33px 0 rgba(0, 0, 0, 0.19);*/
+	-webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .divider {
@@ -2485,7 +2491,7 @@ header, main, footer {
 .spinner {
   width: 60px;
   height: 60px;
-
+	
   margin: 100px auto;
   -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
   animation: sk-rotateplane 1.2s infinite ease-in-out;

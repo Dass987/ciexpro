@@ -1,0 +1,16 @@
+#faqs {
+
+}
+
+.card {
+	border: none !important;
+}
+.card-header button {
+	text-decoration: none !important;
+	color: #5B5B5F;
+	transition: .3s;
+}
+
+.card-header button:hover {
+	color: #762097;
+}
