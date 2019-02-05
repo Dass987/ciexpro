@@ -32,8 +32,10 @@ header, main, footer {
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 /* --- Main navbar --- */
 
-#main-navbar-colucci{
+#main-navbar{
+	height: 100px;
 	transition: .3s;
+	background-color: transparent;
 	z-index: 1;
 }
 
@@ -45,53 +47,41 @@ header, main, footer {
   z-index: 2; /* Stay on top */
   top: 0; /* Stay at the top */
   right: 0;
-	background-color: transparent !important;
+  background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 0px; /* Place content 60px from the top */
-  transition: .3s; /* 0.5 second transition effect to slide in the sidenav */
-	border-bottom-left-radius: 30px;
-	border-top-left-radius: 30px;
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
 .sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
+  font-size: 25px;
+  color: #818181;
   display: block;
   transition: 0.3s;
 }
 
-/* --- Ciexpro helpers --- */
-
-.ciexpro-nav-link {
-	padding: 0 !important;
-	margin-left: 0px;
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
-.ciexpro-nav-link {
-	padding: 0px 10px !important;
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-.ciexpro-nav-link > a{
-	font-size: 15px !important;
-	padding: 15px 0 !important;
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
 }
-
-.ciexpro-nav-link:hover > a{
-	font-weight: 700;
-}
-
-.ciexpro-nav-link .divider {
-	height: 2px;
-	width: 0;
-	background-color: #762097;
-	transition: .3s;
-}
-
-.ciexpro-nav-link:hover > .divider {
-	width: 100%;
-	background-color: #762097;
-}
-
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -99,80 +89,157 @@ header, main, footer {
   .sidenav a {font-size: 18px;}
 }
 
-.sidenav-trigger {
-	cursor: pointer;
-}
+/* ------------------------------------------------------------------------------------------------------------------------------ */
 
-.sidenav-trigger > i {
-	font-size: 28px;
-	transition: .3s;
-}
-
-.sidenav-trigger:hover > i {
-	color: #0081C6;
-}
-
-.ciexpro-text-purple.close-sidenav {
-	cursor: pointer;
-	padding: 15px 10px !important;
-}
-
-.ciexpro-text-purple.close-sidenav > i {
-	font-size: 25px !important;
-	transition: .3s;
-}
-
-.ciexpro-text-purple.close-sidenav:hover > i {
-	color: #0081C6;
-}
-
-/**/
-
-#main-landing .img-landing {
+.parallax::after{
+	content: '';
 	height: 100vh;
-	padding: 0;
+	width: 100%;
+	background-image: url('../img/north/DSC_8137.jpg');
+  background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	filter: blur(0px);
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);
+	-o-filter: blur(0px);
+	transition: all 1000ms;
 }
 
-#main-landing .img-landing img {
+.parallax:hover::after {
+	/*filter: blur(2px);
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);*/
+}
+
+.header-content {
+	color: #FFFFFF;
+	cursor: pointer;
+	filter: blur(2px);
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	position: absolute;
+	z-index: 1;
+	top: 15%;
+	left: 50%;
+	margin-top: 90px;
+	margin-left: -150px;
+	text-align: center;
+	width: 300px;
+	height: 350px;
+	transition: all 1000ms;
+}
+
+.header-content:hover {
+	position: absolute;
+	left:0;
+	top:0;
+	margin:0;
+	width: 100%;
 	height: 100%;
+	filter: blur(0px);
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);
+	-o-filter: blur(0px);
+	background-color: rgba(0, 0, 0, .7);
+}
+
+.header-content .landing {
+	width: 350px;
+  position: absolute; /* or absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-content:hover .landing {
+  position: absolute; /* or absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-content .title {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2rem;
+}
+
+.header-content .text {
+	line-height: 1.7;
+	margin-top: 1rem;
+}
+
+#features {
+	background-color: #1f73b7;
+}
+
+#features .row {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
 }
 
 /**/
 
-#places-zone .rounded-left {
-	border-top-left-radius: 40px !important;
-	border-bottom-left-radius: 40px !important;
+.main-features-location {
+	border: 1px solid #F00;
+	border-top-left-radius: 0;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 20px;
 }
 
-.offer-zone img {
+.main-features-privacy {
+
+	border: 1px solid #F00;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 20px;
+}
+
+.main-features-couch {
+
+	border: 1px solid #F00;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 20px;
+}
+
+/**/
+
+.parallax-second::after{
+	content: '';
+	height: 500px;
 	width: 100%;
-	margin: auto;
+	background-image: url('../img/south/DSC_8119.jpg');
+  background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
 }
 
-.features-first {
-	transition: .3s;
+#location, #detalles-ruta-norte {
+	background-color: #f5f5f5;
 }
 
+/* Set the size of the div element that contains the map */
 #location-map {
 	margin-bottom: -6px;
 	height: 500px;  /* The height is 400 pixels */
 	width: 100%;  /* The width is the width of the web page */
 }
 
-
-
-
-
-
-
-
-
-/* ------------------------------------------------------------------------------------------------------------------------------ */
-/* --- Estelio customs --- */
-
-.title-ciexpro {
-	font-family: 'Roboto Slab', sans-serif;
+#carousel-section, #carousel-section img {
+	height: 100vh;
 }
+
+/* --- Estelio customs --- */
 
 .title-estelio {
 	font-family: 'NeoSansArabic-Medium', sans-serif;
@@ -193,10 +260,6 @@ header, main, footer {
 
 .Ciexpro-logo{
 	max-width: 150px;
-}
-
-.blue-like-chat {
-	background-color: #1f73b7 !important;
 }
 
 /* - - - - */
@@ -265,6 +328,31 @@ header, main, footer {
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 /* --- Ciexpro helpers --- */
+
+.ciexpro-nav-link {
+	padding: 0 !important;
+	margin-left: 25px;
+}
+
+.ciexpro-nav-link  > a{
+	font-size: 18px !important;
+	padding: 0 !important;
+}
+
+.ciexpro-nav-link:hover > a{
+	font-weight: 700;
+}
+
+.ciexpro-nav-link .divider {
+	height: 2px;
+	width: 0;
+	background-color: #762097;
+	transition: .3s;
+}
+
+.ciexpro-nav-link:hover > .divider {
+	width: 100%;
+}
 
 .ciexpro-text-blue {
 	color: #0081C6 !important;
@@ -2489,66 +2577,32 @@ header, main, footer {
 	transform: translate(-50%, -50%);
 }
 
-.sk-cube-grid {
-  width: 40px;
-  height: 40px;
+.spinner {
+  width: 60px;
+  height: 60px;
+	
   margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
 }
 
-.sk-cube-grid .sk-cube {
-  width: 33%;
-  height: 33%;
-  background-color: #333;
-  float: left;
-  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
 }
-.sk-cube-grid .sk-cube1 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
-.sk-cube-grid .sk-cube2 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
-.sk-cube-grid .sk-cube3 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s; }
-.sk-cube-grid .sk-cube4 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s; }
-.sk-cube-grid .sk-cube5 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
-.sk-cube-grid .sk-cube6 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
-.sk-cube-grid .sk-cube7 {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s; }
-.sk-cube-grid .sk-cube8 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s; }
-.sk-cube-grid .sk-cube9 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
 
-@-webkit-keyframes sk-cubeGridScaleDelay {
-  0%, 70%, 100% {
-    -webkit-transform: scale3D(1, 1, 1);
-            transform: scale3D(1, 1, 1);
-  } 35% {
-    -webkit-transform: scale3D(0, 0, 1);
-            transform: scale3D(0, 0, 1); 
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
-}
-
-@keyframes sk-cubeGridScaleDelay {
-  0%, 70%, 100% {
-    -webkit-transform: scale3D(1, 1, 1);
-            transform: scale3D(1, 1, 1);
-  } 35% {
-    -webkit-transform: scale3D(0, 0, 1);
-            transform: scale3D(0, 0, 1);
-  } 
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------- */

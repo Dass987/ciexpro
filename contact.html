@@ -49,7 +49,7 @@
 	<header>
 
 		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg grey lighten-4 fixed-top p-0 shadow mb-5">
+		<nav id="main-navbar" class="navbar navbar-expand white fixed-top p-0 shadow mb-5 pr-3">
 			<div class="container">
 				<a class="navbar-brand" href="home.html">
 					<img src="img/logos/Color.png" alt="Estelio" class="Ciexpro-logo">
@@ -61,42 +61,46 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item ciexpro-nav-link">
-							<a class="nav-link ciexpro-text-purple" href="home.html">Inicio</a>
-							<div class="divider"></div>
-						</li>
-						<li class="nav-item ciexpro-nav-link">
-							<a class="nav-link ciexpro-text-purple" href="#rooms">Salas</a>
-							<div class="divider"></div>
-						</li>
-						<li class="nav-item ciexpro-nav-link">
-							<a class="nav-link ciexpro-text-purple" href="contact.html">Contacto</a>
-							<div class="divider"></div>
-						</li>
-						<li class="nav-item ciexpro-nav-link dropdown">
-							<a class="nav-link dropdown-toggle ciexpro-text-purple" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-								aria-haspopup="true" aria-expanded="false">
-								Salones
+							<a class="nav-link ciexpro-text-purple sidenav-trigger">
+								<i class="fas fa-bars"></i>
 							</a>
-							<div class="divider"></div>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="north.html">Ruta norte</a>
-								<a class="dropdown-item" href="south.html">Ruta sur</a>
-								<a class="dropdown-item" href="base.html">Campamento base</a>
-							</div>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 
+		<!-- Sidenav -->
+
+		<aside id="ciexpro-sidenav" class="sidenav white shadow-lg">
+			<!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+			<ul>
+				<li class="ciexpro-nav-link">
+					<a class="ciexpro-text-purple close-sidenav">
+						<!--<i class="far fa-arrow-alt-circle-right"></i>-->
+						<i class="far fa-times-circle"></i>
+					</a>
+				</li>
+				<li class="ciexpro-nav-link">
+					<a class="ciexpro-text-purple" href="home.html">Inicio</a>
+					<div class="divider"></div>
+				</li>
+				<li class="ciexpro-nav-link">
+					<a class="ciexpro-text-purple" href="salas.html">Salas</a>
+					<div class="divider"></div>
+				</li>
+				<li class="ciexpro-nav-link">
+					<a class="ciexpro-text-purple" href="contact.html">Contacto</a>
+					<div class="divider"></div>
+				</li>
+			</ul>
+		</aside>
+
 		<!-- Banner -->
-		<section class="mt-5 py-5 text-center">
+		<section class="mt-5 py-5 text-center banner-contact">
 			<img src="img/Base-del-conocimiento.png" class="img-fluid mt-5">
 		</section>
 		
-		<div class="container">
-			<div class="divider"></div>
-		</div>
 	</header>
 
 	<!------------------------------------------------------- Fin header ------------------------------------------------------------->
@@ -108,29 +112,29 @@
 				<h2 class="font-weight-bold ciexpro-text-purple">Información de contacto</h2>
 				<h6 class="ciexpro-text-gray">Comunícate con nosotros</h6>
 				<div class="row mt-5">
-					<div class="col-md-12 mb-5">
+					<div class="col-md-12 mb-5 col-address">
 						<h5 class="font-bold ciexpro-text-gray"><i class="fas fa-map-marker-alt"></i> Dirección</h5>
 						<h6 class="ciexpro-text-gray mt-3">
 							Av. Eugenio Mendoza con 2da. Transversal, Torre Multinvest, Piso 2, Oficina 2C. La Castellana Caracas – Venezuela.
 						</h6>
 					</div>
-					<div class="col-md-12 mb-5">
+					<div class="col-md-12 mb-5 is-divider">
 						<div class="divider"></div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 col-mail">
 						<h5 class="font-bold ciexpro-text-gray"><i class="far fa-envelope"></i> Correo electrónico</h5>
 						<h6 class="ciexpro-text-gray mt-3">
-							ciexpro@ciexpro.com
+							sales.salones@gmail.com
 						</h6>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 col-phone">
 						<h5 class="font-bold ciexpro-text-gray"><i class="fa fa-phone"></i> Teléfono</h5>
 						<h6 class="ciexpro-text-gray mt-3">
 							(+58) 212 264.51.30
 						</h6>
 					</div>
 				</div>
-				<div class="my-5">
+				<div class="my-5 social-networks-container">
 					<a class="social-network rounded-circle facebook-link" style="padding: 7px 8px 6px 11px;font-size: 16px;">
 						<i class="fab fa-facebook-f"></i>
 					</a>

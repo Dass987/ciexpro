@@ -30,3 +30,71 @@ input:focus, textarea:focus {
 	background-color: #762097;
 	color: #FFFFFF;
 }
+
+@media only screen and (max-width: 600px) {
+	.banner-contact {
+		display: none;
+	}
+
+	main {
+		margin-top: 40px;
+	}
+
+	main h2.ciexpro-text-purple {
+		color: #5B5B5F !important;
+		text-align: center !important;
+		margin-bottom: 20px !important;
+		font-size: 1.7rem !important;
+	}
+	
+	main h6 {
+		text-align: center !important;
+	}
+
+	div.col-address {
+		text-align: center !important;
+	}
+
+	.is-divider {
+		display: none;
+	}
+
+	div.col-mail {
+		text-align: center !important;
+		margin-bottom: 45px !important;
+	}
+
+	div.col-phone {
+		text-align: center !important;
+	}
+
+	div.social-networks-container {
+		margin: 30px 0 !important;
+		text-align: center;
+		padding-bottom: 40px;
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	input, textarea {
+		border: 1px solid #bdbdbd !important;
+		background-color: #fafafa !important;
+		font-size: 18px !important;
+	}
+
+	#btn-send-mail {
+		display: block;
+		width: 100%;
+		padding: 15px 0 !important;
+		border-color: #bdbdbd;
+		color: #bdbdbd !important;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	
+}
+
+@media only screen and (max-width: 992px) {
+	
+}
