@@ -146,6 +146,10 @@ header, main, footer {
 	height: 100vh;
 }
 
+.pre-footer-blockquote {
+	height: 100vh;
+}
+
 @media only screen and (max-width: 600px) {
 	
 	#main-navbar {
@@ -227,10 +231,6 @@ header, main, footer {
 
 	#location-map {
 		height: 400px !important;
-	}
-
-	.pre-footer-blockquote {
-		padding: 150px 0 !important;
 	}
 
 	.pre-footer-blockquote p {
