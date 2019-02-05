@@ -142,6 +142,10 @@ header, main, footer {
 	width: 100%;
 }
 
+.landing-blockquote {
+	height: 100vh;
+}
+
 @media only screen and (max-width: 600px) {
 	
 	#main-navbar {
@@ -177,7 +181,6 @@ header, main, footer {
 	}
 
 	.landing-blockquote {
-		padding: 0 !important;
 		border-bottom: 1px solid #e0e0e0;
 	}
 
