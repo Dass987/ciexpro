@@ -1,0 +1,12 @@
+h1.salas-main-title {
+	font-family: 'Roboto Slab', sans-serif;
+	margin: 100px 0;
+}
+
+.spaces-title {
+	font-family: 'Roboto Slab', sans-serif;
+}
+
+#north-route, #south-route, #base-route {
+	height: 100vh;
+}
