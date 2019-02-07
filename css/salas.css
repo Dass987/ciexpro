@@ -1,3 +1,17 @@
+#main-landing-salas{
+
+}
+
+#main-landing-salas .img-landing {
+	height: 90vh;
+	padding: 0;
+}
+
+#main-landing-salas .img-landing img {
+	height: 100%;
+	width: 100%;
+}
+
 h1.salas-main-title {
 	font-family: 'Roboto Slab', sans-serif;
 	margin: 100px 0;

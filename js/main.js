@@ -1,6 +1,11 @@
 let myVar = setTimeout(showPage, 2000);
 
 window.addEventListener('load', () => {
+
+	let north = $('.gallery a.north-route-thumbnail').simpleLightbox(),
+		south = $('.gallery a.south-route-thumbnail').simpleLightbox(),
+		base = $('.gallery a.base-route-thumbnail').simpleLightbox();
+
 	myVar;
 });
 
