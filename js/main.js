@@ -59,7 +59,7 @@ let north = $('.gallery a.north-route-thumbnail').simpleLightbox(),
 	  south = $('.gallery a.south-route-thumbnail').simpleLightbox(),
 	  base = $('.gallery a.base-route-thumbnail').simpleLightbox();
 
-window.addEventListener('load', async () => {
+document.addEventListener('DOMContentLoaded', () => {
 	
 	myVar;
 	
