@@ -1,3 +1,10 @@
+
+document.addEventListener('DOMContentLoaded', () => {
+
+	myVar;
+
+});
+
 let myVar = setTimeout(showPage, 2000);
 const images = {
 	south: {
@@ -33,37 +40,45 @@ const southImgs = document.querySelectorAll("#south-route img");
 const baseImgs = document.querySelectorAll("#base-route img");
 let counter = 0;
 
-images.north.src.forEach(uri => {
-	northImgs[counter].onload = function () { console.log("Height: " + this.height); };
-	northImgs[counter].src = uri;
-	counter++;
-});
+if (northImgs.length > 0) {
 
-counter = 0;
+	images.north.src.forEach(uri => {
+		northImgs[counter].onload = function () { console.log("Height: " + this.height); };
+		northImgs[counter].src = uri;
+		counter++;
+	});
 
-images.south.src.forEach(uri => {
-	southImgs[counter].onload = function () { console.log("Height: " + this.height); };
-	southImgs[counter].src = uri;
-	counter++;
-});
+	let north = $('.gallery a.north-route-thumbnail').simpleLightbox();
 
-counter = 0;
+}
 
-images.base.src.forEach(uri => {
-	baseImgs[counter].onload = function () { console.log("Height: " + this.height); };
-	baseImgs[counter].src = uri;
-	counter++;
-});
+if (southImgs.length > 0) {
 
-let north = $('.gallery a.north-route-thumbnail').simpleLightbox(),
-	  south = $('.gallery a.south-route-thumbnail').simpleLightbox(),
-	  base = $('.gallery a.base-route-thumbnail').simpleLightbox();
+	counter = 0;
 
-document.addEventListener('DOMContentLoaded', () => {
-	
-	myVar;
-	
-});
+	images.south.src.forEach(uri => {
+		southImgs[counter].onload = function () { console.log("Height: " + this.height); };
+		southImgs[counter].src = uri;
+		counter++;
+	});
+
+	let south = $('.gallery a.south-route-thumbnail').simpleLightbox();
+
+}
+
+if (baseImgs.length > 0) {
+
+	counter = 0;
+
+	images.base.src.forEach(uri => {
+		baseImgs[counter].onload = function () { console.log("Height: " + this.height); };
+		baseImgs[counter].src = uri;
+		counter++;
+	});
+
+	let base = $('.gallery a.base-route-thumbnail').simpleLightbox();
+
+}
 
 /* Set the width of the side navigation to 250px */
 document.querySelector(".sidenav-trigger").addEventListener('click', () => { document.getElementById("ciexpro-sidenav").style.width = "250px"; });
