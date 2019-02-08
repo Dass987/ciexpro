@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 let myVar = setTimeout(showPage, 2000);
+
+// --- Models
 const images = {
 	south: {
 		src: [
