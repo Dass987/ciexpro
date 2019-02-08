@@ -1,27 +1,13 @@
 let myVar = setTimeout(showPage, 2000);
 
-window.addEventListener('load', () => {
+window.addEventListener('load', async () => {
 
-	let north = $('.gallery a.north-route-thumbnail').simpleLightbox(),
-		south = $('.gallery a.south-route-thumbnail').simpleLightbox(),
-		base = $('.gallery a.base-route-thumbnail').simpleLightbox();
+	let north = await $('.gallery a.north-route-thumbnail').simpleLightbox(),
+		south = await $('.gallery a.south-route-thumbnail').simpleLightbox(),
+		base = await $('.gallery a.base-route-thumbnail').simpleLightbox();
 
 	myVar;
-});
-
-window.addEventListener('scroll', () => {
-
 	
-	if (document.getElementsByTagName("html")[0].scrollTop >= 620) {
-		/*document.getElementById("main-navbar").style.height = "60px";
-		document.getElementById("main-navbar").style.backgroundColor = "#fafafa";*/
-		//document.querySelector(".features-first").style.borderRight = "1px solid #512da8";
-	} else if (document.getElementsByTagName("html")[0].scrollTop < 620) {
-		//document.querySelector(".features-first").style.borderColor = "#e0e0e0";
-		/*document.getElementById("main-navbar").style.height = "100px";
-		document.getElementById("main-navbar").style.backgroundColor = "transparent";*/
-	}
-
 });
 
 /* Set the width of the side navigation to 250px */
