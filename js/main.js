@@ -33,37 +33,34 @@ const southImgs = document.querySelectorAll("#south-route img");
 const baseImgs = document.querySelectorAll("#base-route img");
 let counter = 0;
 
+images.north.src.forEach(uri => {
+	northImgs[counter].onload = function () { console.log("Height: " + this.height); };
+	northImgs[counter].src = uri;
+	counter++;
+});
+
+counter = 0;
+
+images.south.src.forEach(uri => {
+	southImgs[counter].onload = function () { console.log("Height: " + this.height); };
+	southImgs[counter].src = uri;
+	counter++;
+});
+
+counter = 0;
+
+images.base.src.forEach(uri => {
+	baseImgs[counter].onload = function () { console.log("Height: " + this.height); };
+	baseImgs[counter].src = uri;
+	counter++;
+});
+
+let north = $('.gallery a.north-route-thumbnail').simpleLightbox(),
+	  south = $('.gallery a.south-route-thumbnail').simpleLightbox(),
+	  base = $('.gallery a.base-route-thumbnail').simpleLightbox();
+
 window.addEventListener('load', async () => {
 	
-	images.north.src.forEach(uri => {
-
-		northImgs[counter].src = uri;
-		counter++;
-
-	});
-
-	counter = 0;
-
-	images.south.src.forEach(uri => {
-
-		southImgs[counter].src = uri;
-		counter++;
-
-	});
-
-	counter = 0;
-
-	images.base.src.forEach(uri => {
-
-		baseImgs[counter].src = uri;
-		counter++;
-
-	});
-
-	let north = await $('.gallery a.north-route-thumbnail').simpleLightbox(),
-		south = await $('.gallery a.south-route-thumbnail').simpleLightbox(),
-		base = await $('.gallery a.base-route-thumbnail').simpleLightbox();
-
 	myVar;
 	
 });
