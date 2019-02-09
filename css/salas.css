@@ -24,3 +24,37 @@ h1.salas-main-title {
 	height: auto;
 	padding: 5rem 0 !important;
 }
+
+@media only screen and (max-width: 600px) {
+	#main-landing-salas .img-landing {
+		height: auto;
+		padding: 0;
+	}
+	h1.salas-main-title {
+		text-align: center;
+		font-size: 2rem !important;
+		margin: 30px auto 40px auto !important;
+	}
+	#main-landing-salas h4 {
+		text-align: justify;
+	}
+	#north-route .hoverable.rounded {
+		width: 300px;
+		margin: 20px auto !important;
+	}
+	#south-route .hoverable.rounded {
+		width: 300px;
+		margin: 20px auto !important;
+	}
+	#base-route .hoverable.rounded {
+		width: 300px;
+		margin: 20px auto !important;
+	}
+	.features-salas-zone > .row > .col-md-4 {
+		border: none !important;
+		border-bottom: 1px solid #e0e0e0 !important;
+	}
+	.features-salas-zone > .row > .col-md-4:last-child {
+		border: none !important;
+	}
+}

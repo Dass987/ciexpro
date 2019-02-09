@@ -49,8 +49,8 @@ header, main, footer {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 0px; /* Place content 60px from the top */
   transition: .3s; /* 0.5 second transition effect to slide in the sidenav */
-	border-bottom-left-radius: 30px;
-	border-top-left-radius: 30px;
+	/*border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px;*/
 }
 
 /* The navigation menu links */
@@ -254,7 +254,23 @@ header, main, footer {
 }
 
 @media only screen and (max-width: 768px) {
-	
+	footer {
+		text-align: center !important;
+	}
+
+	.footer-nav-menu {
+		margin-bottom: 40px !important;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	footer {
+		text-align: center !important;
+	}
+
+	.footer-nav-menu {
+		margin-bottom: 40px !important;
+	}
 }
 
 @media only screen and (max-width: 992px) {

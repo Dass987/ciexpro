@@ -34,6 +34,14 @@
 		padding: 10px 0 !important;
 	}
 
+	.card-header button {
+		text-align: left !important;
+		white-space: normal;
+		text-decoration: none !important;
+		color: #5B5B5F;
+		transition: .3s;
+	}
+
 }
 
 @media only screen and (max-width: 768px) {

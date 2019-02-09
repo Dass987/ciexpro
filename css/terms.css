@@ -1,0 +1,28 @@
+
+@media only screen and (max-width: 600px) {
+	
+	#banner-terms {
+		display: none;
+	}
+
+	main {
+		margin-top: 40px;
+	}
+
+	main .terms-title {
+		text-align: center !important;
+		color: #5B5B5F !important;
+		padding: 10px 0 !important;
+	}
+
+	.terms-subtitle {
+		text-align: center !important;
+	}
+
+	.terms-little-title {
+		text-align: center !important;
+		margin-bottom: 20px !important;
+		color: #762097;
+	}
+
+}

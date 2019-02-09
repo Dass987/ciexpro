@@ -1,8 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-
 	myVar;
-
 });
 
 let myVar = setTimeout(showPage, 2000);
