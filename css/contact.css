@@ -15,16 +15,15 @@
 
 input, textarea {
 	border: 1px solid #e0e0e0 !important;
-	background-color: #fafafa !important;
+	background-color: #FFFFFF !important;
 	font-size: 14px !important;
 }
 
 input:focus, textarea:focus {
 	border: 1px solid #762097 !important;
-	box-shadow: 0 0 0px #762097 !important;
-	-moz-box-shadow: 0 0 0px #762097 !important;
-	-webkit-box-shadow: 0 0 0px #762097 !important;
-	background-color: #FFFFFF !important;
+	box-shadow: 0 0 1px #762097 !important;
+	-moz-box-shadow: 0 0 1px #762097 !important;
+	-webkit-box-shadow: 0 0 1px #762097 !important;
 }
 
 #btn-send-mail {
