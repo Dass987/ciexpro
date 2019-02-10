@@ -73,7 +73,7 @@ header, main, footer {
 
 .ciexpro-nav-link > a{
 	font-size: 15px !important;
-	padding: 15px 0 !important;
+	padding: 5px 0 !important;
 }
 
 .ciexpro-nav-link:hover > a{
@@ -183,7 +183,7 @@ header, main, footer {
 		padding: 5px 0 !important;
 		margin: 10px 0 !important;
 	}
-
+	
 	.landing-blockquote {
 		border-bottom: 1px solid #e0e0e0;
 	}
@@ -264,6 +264,11 @@ header, main, footer {
 }
 
 @media only screen and (max-width: 991px) {
+
+	#main-landing .img-landing {
+		height: auto;
+	}
+
 	footer {
 		text-align: center !important;
 	}
@@ -462,7 +467,7 @@ header, main, footer {
 }
 
 .ciexpro-footer-mail:hover, .ciexpro-footer-mail > a:hover {
-	color: #762097 !important;
+	color: #FFFFFF !important;
 }
 
 .ciexpro-footer-title {
@@ -484,7 +489,7 @@ header, main, footer {
 }
 
 .ciexpro-footer-item > a:hover {
-	color: #762097 !important;
+	color: #FFFFFF !important;
 }
 
 .ciexpro-footer-address {
