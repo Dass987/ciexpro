@@ -352,6 +352,7 @@ header, main, footer {
 	margin-right: 5px;
 	cursor: pointer;
 	transition: .4s;
+	text-decoration: none !important;
 }
 
 .social-network.facebook-link:hover {
