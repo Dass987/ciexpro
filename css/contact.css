@@ -109,6 +109,10 @@ input:focus, textarea:focus {
 
 }
 
+#contact-cite {
+	height: 50vh;
+}
+
 @media only screen and (max-width: 768px) {
 	.banner-contact {
 		display: none;
