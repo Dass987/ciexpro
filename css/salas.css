@@ -20,6 +20,10 @@ h1.salas-main-title {
 	font-family: 'Roboto Slab', sans-serif;
 }
 
+#feature-salas-section {
+	
+}
+
 #north-route, #south-route, #base-route {
 	height: auto;
 	padding: 5rem 0 !important;
